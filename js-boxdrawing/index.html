@@ -38,17 +38,15 @@
   <h1>Javascript Box Drawing Demo</h1>
   <p>This a demo for the <a
     href='http://github.com/MarkLodato/js-boxdrawing'>js-boxdrawing</a>
-  library.  Turn on the drawing feature by selecting a style other than "Off".
-  Then, with the cursor in the text area below, press the arrow keys (plus any
-  modifers selected) to produce Unicode box drawing characters.
+  library.  Segure o Ctrl e mova com as setas. Também pode selecionar outra tecla diferente do Ctrl e um estilo diferente (Ctrl+B) do regular.
   <div id="form">
-  <textarea id='thearea' rows='20' cols='80'></textarea>
+  <textarea id='thearea' rows='20' cols='80' autofocus></textarea>
   <form name="boxdrawing">
     <div class="style-selection">
-      Style (CTRL-B):<br>
-      <input type="radio" value="" name="style" id="style-off" checked><label
+      Estilo (CTRL-B):<br>
+      <input type="radio" value="" name="style" id="style-off"><label
         for="style-off"> Off</label><br>
-      <input type="radio" value="r" name="style" id="style-regular"><label
+      <input type="radio" value="r" name="style" id="style-regular" checked><label
         for="style-regular"> Regular</label><br>
       <input type="radio" value="b" name="style" id="style-bold"><label
         for="style-bold"> Bold</label><br>
@@ -61,13 +59,13 @@
         for="style-dotted"> Dotted</label> (Not Implemented)<br>
       -->
       <input type="radio" value="_" name="style" id="style-space"><label
-        for="style-space"> Erase</label>
+        for="style-space"> Apagar</label>
     </div>
     <div class="arrow-key-selection">
-      Arrow Key +<br>
+      Tecla + Seta<br>
       <input type="checkbox" value="alt" name="arrowkey" id="arrowkey-alt"
         ><label for="arrowkey-alt"> Alt</label><br>
-      <input type="checkbox" value="ctrl" name="arrowkey" id="arrowkey-ctrl"
+      <input type="checkbox" value="ctrl" name="arrowkey" id="arrowkey-ctrl" checked
         ><label for="arrowkey-ctrl"> Ctrl</label><br>
       <input type="checkbox" value="shift" name="arrowkey" id="arrowkey-shift"
         ><label for="arrowkey-shift"> Shift</label>
